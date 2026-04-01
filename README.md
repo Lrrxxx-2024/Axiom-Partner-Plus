@@ -131,9 +131,9 @@ cp .env.example .env.local
 npm run dev
 ```
 
-Open `http://localhost:3000`. Chat works with a free Gemini API key. Image/video generation requires a billing-enabled key.
+Chat works with a free Gemini API key. Image/video generation requires a billing-enabled key.
 
-打开 `http://localhost:3000`。对话功能用免费 Gemini API Key 即可。图片/视频生成需要开通计费的 Key。
+对话功能用免费 Gemini API Key 即可。图片/视频生成需要开通计费的 Key。
 
 ---
 
@@ -175,8 +175,6 @@ Lead Agent (creative director) with sub-agents (visual, copy, strategy). Sub-age
 Per-dimension preference confidence scores derived from explicit statements, selection behavior, and revision feedback. High confidence → Agent decides without asking. Low confidence → Agent confirms first.
 
 按维度独立的偏好置信度，从用户明确表态、选择行为、修改反馈中学习。置信度高 → Agent 直接做决策；置信度低 → Agent 主动确认。
-
-See `framework-extension.docx` for full documentation.｜完整文档见 `framework-extension.docx`。
 
 ---
 
