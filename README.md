@@ -54,6 +54,7 @@ Agent内部维护一组状态变量（创作简报、审美方向、执行信心
 | 🔬 **CRITIQUE** | After execution | Self-reviews before asking for user feedback |
 
 **交付物**
+
 可交互Demo：左侧为实时对话界面（LLM驱动，流式输出），右侧实时展示Agent内部状态面板（行为模式、内心推理、状态变量变化），支持图片生成与视频生成（架构已实现，含失败自动降级逻辑）
 框架拓展文档：三层拓展设计——跨会话记忆（新增RESUME/EVOLVE模式）、多Agent协作（主Agent仲裁架构）、用户画像演进（偏好置信度机制），每个设计决策都有"为什么"
 
@@ -150,9 +151,17 @@ Every decision answers "why":
 - Why does the Agent have a disagreement flag? → A partner without opinions is just a tool
 - Why no confirmation during EXECUTE? → Over-confirming breaks collaboration trust
 - Why self-critique before asking? → Gives the user a reference point instead of a blank "what do you think?"
+- 
 
-独立完成从第一性原理出发的需求分析、框架设计、交互Demo搭建、代码审查与优化、拓展文档撰写。重点不在"做了一个能跑的Demo"，而在于每一个产品决策都能回答"为什么这样设计"。
+| 决策 Decision | 为什么 Why |
+|------|--------|
+| 状态机而非对话树 | 创作协作是非线性的，同一输入在不同状态下应触发不同行为 |
+| Agent有"异议标记" | 搭档和工具的本质区别——没有这个能力就退化成工具 |
+| 执行阶段不问用户 | 方向对齐后自主做micro-decisions，过度确认破坏协作信任 |
+| 内容生产类型由Agent决定 | 前端关键词匹配不可靠，Agent有上下文能做更好的判断 |
+| 视频失败自动回退图片 | 用户体验不应被API限制打断，降级产出比报错卡住好 |
 
 ---
 
 Built entirely with AI tools (Claude, Google AI Studio, Manus) as a portfolio piece exploring AI Agent product design.
+独立完成从第一性原理出发的需求分析、框架设计、交互Demo搭建、代码审查与优化、拓展文档撰写。重点不在"做了一个能跑的Demo"，而在于每一个产品决策都能回答"为什么这样设计"。
