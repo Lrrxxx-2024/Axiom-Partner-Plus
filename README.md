@@ -10,6 +10,8 @@
 
 > Pay attention to the right panel: the Agent doesn't just respond — it decides *how* to respond based on its internal state. Notice when it switches to DEBATE mode and pushes back.
 
+大多数AI产品的拟人化停留在语言层——加语气词、加emoji、模仿人类说话方式。这个项目提出一个不同的思路：拟人化的本质不是"怎么说话"，而是Agent是否拥有内部状态，并用状态驱动行为模式切换。
+
 ### Demo Videos
 
 **🎬 Content Production — Article, Image & Video Generation**
@@ -31,6 +33,16 @@ Most AI products fake "personality" with tone and emoji. This project takes a di
 
 The same user input triggers completely different Agent behavior depending on its internal state. That's what separates a state-machine-driven Agent from a regular chatbot.
 
+Agent内部维护一组状态变量（创作简报、审美方向、执行信心、异议标记），这些状态驱动Agent在5个行为模式间自动切换：
+
+理解意图 — 需求模糊时主动追问，不猜测执行
+提出方向 — 给出多条路径并标注自己的专业倾向
+表达主见 — 不认同用户选择时，给出具体理由推回
+执行生产 — 方向确定后自主做微决策，产出视觉内容
+主动评审 — 不等用户反馈，先自我评价再征询意见
+
+同一句用户输入，在不同的内部状态下会触发完全不同的Agent行为——这是状态机驱动与普通Chatbot的根本区别。
+
 ## The 5 Behavior Modes
 
 | Mode | Trigger | What the Agent Does |
@@ -40,6 +52,10 @@ The same user input triggers completely different Agent behavior depending on it
 | ⚡ **DEBATE** | Disagrees with user | Pushes back with specific reasons |
 | 🎨 **EXECUTE** | Direction confirmed | Makes micro-decisions autonomously, produces visuals |
 | 🔬 **CRITIQUE** | After execution | Self-reviews before asking for user feedback |
+
+**交付物**
+可交互Demo：左侧为实时对话界面（LLM驱动，流式输出），右侧实时展示Agent内部状态面板（行为模式、内心推理、状态变量变化），支持图片生成与视频生成（架构已实现，含失败自动降级逻辑）
+框架拓展文档：三层拓展设计——跨会话记忆（新增RESUME/EVOLVE模式）、多Agent协作（主Agent仲裁架构）、用户画像演进（偏好置信度机制），每个设计决策都有"为什么"
 
 ## Live Demo
 
@@ -134,6 +150,8 @@ Every decision answers "why":
 - Why does the Agent have a disagreement flag? → A partner without opinions is just a tool
 - Why no confirmation during EXECUTE? → Over-confirming breaks collaboration trust
 - Why self-critique before asking? → Gives the user a reference point instead of a blank "what do you think?"
+
+独立完成从第一性原理出发的需求分析、框架设计、交互Demo搭建、代码审查与优化、拓展文档撰写。重点不在"做了一个能跑的Demo"，而在于每一个产品决策都能回答"为什么这样设计"。
 
 ---
 
