@@ -8,6 +8,8 @@
 
 ![React](https://img.shields.io/badge/React-19-blue) ![TypeScript](https://img.shields.io/badge/TypeScript-5.8-blue) ![Gemini](https://img.shields.io/badge/Gemini_API-3_Flash-orange)
 
+> Pay attention to the right panel: the Agent doesn't just respond — it decides *how* to respond based on its internal state. Notice when it switches to DEBATE mode and pushes back.
+
 ### Demo Videos
 
 **🎬 Content Production — Article, Image & Video Generation**
@@ -18,7 +20,7 @@ https://youtu.be/PLYTb1-gGUU
 
 https://youtu.be/wo-XVfrZABI
 
-> Pay attention to the right panel: the Agent doesn't just respond — it decides *how* to respond based on its internal state. Notice when it switches to DEBATE mode and pushes back.
+
 ---
 
 ## Why This Project
