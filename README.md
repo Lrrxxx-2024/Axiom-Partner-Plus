@@ -6,8 +6,19 @@
 
 > An interactive demo exploring how to make AI a true creative partner — not by mimicking human speech, but by giving the Agent internal states that drive behavior mode switching.
 
-![Demo Preview](https://img.shields.io/badge/Status-Live_Demo-brightgreen) ![React](https://img.shields.io/badge/React-19-blue) ![TypeScript](https://img.shields.io/badge/TypeScript-5.8-blue) ![Gemini](https://img.shields.io/badge/Gemini_API-3_Flash-orange)
+![React](https://img.shields.io/badge/React-19-blue) ![TypeScript](https://img.shields.io/badge/TypeScript-5.8-blue) ![Gemini](https://img.shields.io/badge/Gemini_API-3_Flash-orange)
 
+### Demo Videos
+
+**🎬 Content Production — Article, Image & Video Generation**
+
+https://youtu.be/PLYTb1-gGUU
+
+**🧠 Internal State — Watch the Agent think and shift modes in real-time**
+
+https://youtu.be/wo-XVfrZABI
+
+> Pay attention to the right panel: the Agent doesn't just respond — it decides *how* to respond based on its internal state. Notice when it switches to DEBATE mode and pushes back.
 ---
 
 ## Why This Project
