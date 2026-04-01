@@ -1,71 +1,81 @@
-# 🎨 Opinionated Creative Partner
+# 🎨 Opinionated Creative Partner｜有主见的创作搭档
 
 **拟人化 ≠ 说话像人。是 Agent 拥有内部状态，用状态驱动行为模式切换。**
 
+**Personification ≠ mimicking human speech. It means the Agent owns internal states that drive behavior mode switching.**
+
 一个超级拟人化 AI Agent 的对话框架设计与可交互 Demo。探索如何让 AI 从"听话的工具"变成"有主见的创作搭档"。
 
-> An interactive demo exploring how to make AI a true creative partner — not by mimicking human speech, but by giving the Agent internal states that drive behavior mode switching.
+An interactive framework design and demo for a hyper-personified AI Agent. Exploring how to turn AI from an obedient tool into an opinionated creative partner.
 
 ![React](https://img.shields.io/badge/React-19-blue) ![TypeScript](https://img.shields.io/badge/TypeScript-5.8-blue) ![Gemini](https://img.shields.io/badge/Gemini_API-3_Flash-orange)
 
+---
+
+## Demo Videos｜演示视频
+
 > Pay attention to the right panel: the Agent doesn't just respond — it decides *how* to respond based on its internal state. Notice when it switches to DEBATE mode and pushes back.
+>
+> 注意右侧面板：Agent 不只是在回复，它在根据内部状态决定"怎么回复"。留意它切换到 DEBATE 模式时如何推回用户的选择。
 
-大多数AI产品的拟人化停留在语言层——加语气词、加emoji、模仿人类说话方式。这个项目提出一个不同的思路：拟人化的本质不是"怎么说话"，而是Agent是否拥有内部状态，并用状态驱动行为模式切换。
-
-### Demo Videos
-
-**🎬 Content Production — Article, Image & Video Generation**
+**🎬 Content Production — Article, Image & Video Generation｜内容生产——文章、图片与视频生成**
 
 https://youtu.be/PLYTb1-gGUU
 
-**🧠 Internal State — Watch the Agent think and shift modes in real-time**
+**🧠 Internal State — Watch the Agent think and shift modes in real-time｜内部状态——实时观察 Agent 的思考与模式切换**
 
 https://youtu.be/wo-XVfrZABI
 
-
 ---
 
-## Why This Project
+## Why This Project｜为什么做这个项目
 
-Most AI products fake "personality" with tone and emoji. This project takes a different approach:
+Most AI products fake "personality" with tone and emoji. This project takes a different approach: **the Agent maintains internal state variables** (creative brief, aesthetic direction, confidence level, disagreement flag) that **drive automatic switching between 5 behavior modes** — not prompt engineering tricks.
 
-**The Agent maintains internal state variables** (creative brief, aesthetic direction, confidence level, disagreement flag) that **drive automatic switching between 5 behavior modes** — not prompt engineering tricks.
+大多数 AI 产品的拟人化停留在语气词和 emoji。这个项目用不同的思路：**Agent 内部维护一组状态变量**（创作简报、审美方向、执行信心、异议标记），**用这些状态驱动 5 个行为模式之间的自动切换**——不是 prompt 技巧。
 
 The same user input triggers completely different Agent behavior depending on its internal state. That's what separates a state-machine-driven Agent from a regular chatbot.
 
-Agent内部维护一组状态变量（创作简报、审美方向、执行信心、异议标记），这些状态驱动Agent在5个行为模式间自动切换：
+同一句用户输入，在不同的内部状态下会触发完全不同的 Agent 行为——这是状态机驱动与普通 Chatbot 的根本区别。
 
-理解意图 — 需求模糊时主动追问，不猜测执行
-提出方向 — 给出多条路径并标注自己的专业倾向
-表达主见 — 不认同用户选择时，给出具体理由推回
-执行生产 — 方向确定后自主做微决策，产出视觉内容
-主动评审 — 不等用户反馈，先自我评价再征询意见
+---
 
-同一句用户输入，在不同的内部状态下会触发完全不同的Agent行为——这是状态机驱动与普通Chatbot的根本区别。
+## The 5 Behavior Modes｜5 个行为模式
 
-## The 5 Behavior Modes
-
-| Mode | Trigger | What the Agent Does |
+| Mode 模式 | Trigger 触发条件 | What the Agent Does 行为 |
 |------|---------|-------------------|
-| 🔍 **UNDERSTAND** | Vague request | Asks clarifying questions instead of guessing |
-| 💡 **PROPOSE** | Brief is clear | Offers 2-3 directions, states its own preference |
-| ⚡ **DEBATE** | Disagrees with user | Pushes back with specific reasons |
-| 🎨 **EXECUTE** | Direction confirmed | Makes micro-decisions autonomously, produces visuals |
-| 🔬 **CRITIQUE** | After execution | Self-reviews before asking for user feedback |
+| 🔍 **UNDERSTAND 理解意图** | Vague request 需求模糊 | Asks clarifying questions instead of guessing 主动追问，不猜测执行 |
+| 💡 **PROPOSE 提出方向** | Brief is clear 需求基本清晰 | Offers 2-3 directions, states its own preference 给出多条路径并标注自己的倾向 |
+| ⚡ **DEBATE 表达主见** | Disagrees with user 不认同用户选择 | Pushes back with specific reasons 给出具体理由推回 |
+| 🎨 **EXECUTE 执行生产** | Direction confirmed 方向确定 | Makes micro-decisions autonomously, produces visuals 自主做微决策，产出视觉内容 |
+| 🔬 **CRITIQUE 主动评审** | After execution 执行完成 | Self-reviews before asking for user feedback 先自我评价再征询意见 |
 
-**交付物**
+---
 
-可交互Demo：左侧为实时对话界面（LLM驱动，流式输出），右侧实时展示Agent内部状态面板（行为模式、内心推理、状态变量变化），支持图片生成与视频生成（架构已实现，含失败自动降级逻辑）
-框架拓展文档：三层拓展设计——跨会话记忆（新增RESUME/EVOLVE模式）、多Agent协作（主Agent仲裁架构）、用户画像演进（偏好置信度机制），每个设计决策都有"为什么"
+## Deliverables｜交付物
 
-## Live Demo
+**Interactive Demo｜可交互 Demo**
 
-**Left panel**: Real-time chat with AI (streaming, LLM-powered)
-**Right panel**: Agent's internal state — visible to the audience, invisible to the "user"
+- **Left panel**: Real-time chat with AI (LLM-powered, streaming output)
+- **Right panel**: Agent internal state panel — mode switching, inner monologue, state variables, all updating in real-time
 
-The right panel shows mode switching, inner monologue, confidence bar, and disagreement flag updating in real-time as the conversation progresses.
 
-## Architecture
+- **左侧面板**：实时对话界面（LLM 驱动，流式输出）
+- **右侧面板**：Agent 内部状态面板——行为模式、内心推理、状态变量实时变化
+
+Supports image and video generation with automatic fallback logic (video failure → image).
+
+支持图片与视频生成，含失败自动降级逻辑（视频失败 → 自动回退图片）。
+
+**Framework Extension Document｜框架拓展文档**
+
+Three expansion layers — cross-session memory (RESUME/EVOLVE modes), multi-Agent collaboration (lead Agent arbitration), user profile evolution (per-dimension preference confidence). Every design decision has a "why".
+
+三层拓展设计——跨会话记忆（新增 RESUME/EVOLVE 模式）、多 Agent 协作（主 Agent 仲裁架构）、用户画像演进（偏好置信度机制）。每个设计决策都有"为什么"。
+
+---
+
+## Architecture｜架构
 
 ```
 User Input + Agent Internal State
@@ -77,28 +87,33 @@ User Input + Agent Internal State
   If EXECUTE → Content Production Layer (image / video / text)
 ```
 
-**Dual-layer design:**
-- **Surface layer** (user-visible): Natural language conversation
-- **State layer** (user-invisible): Internal variables driving mode transitions
+**Dual-layer design｜双层架构：**
 
-**Key architectural decisions:**
+- **Surface layer** (user-visible): Natural language conversation｜表层（用户可见）：自然语言对话
+- **State layer** (user-invisible): Internal variables driving mode transitions｜底层（用户不可见）：内部状态变量驱动模式转换
 
-- **State machine, not dialogue tree** — creative collaboration is non-linear; same input should trigger different behavior in different states
-- **Agent decides content type** — `executeType` (image/video/text) is determined by the Agent with full context, not by frontend keyword matching
-- **Video failure auto-fallback** — if video generation fails, automatically falls back to image generation with explanation
-- **Mode transition constraints** — UNDERSTAND → EXECUTE is forbidden (must go through PROPOSE); DEBATE has a 2-round cap
+**Key architectural decisions｜关键架构决策：**
 
-## Tech Stack
+- **State machine, not dialogue tree** — creative collaboration is non-linear; same input should trigger different behavior in different states｜状态机而非对话树——创作协作是非线性的
+- **Agent decides content type** — `executeType` is determined by the Agent with full context, not by frontend keyword matching｜内容类型由 Agent 决定，不靠前端关键词匹配
+- **Video failure auto-fallback** — if video generation fails, automatically falls back to image with explanation｜视频失败自动回退图片
+- **Mode transition constraints** — UNDERSTAND → EXECUTE is forbidden (must go through PROPOSE); DEBATE has a 2-round cap｜模式转换约束——不能跳过 PROPOSE 直接执行
 
-| Layer | Technology |
+---
+
+## Tech Stack｜技术栈
+
+| Layer 层级 | Technology 技术 |
 |-------|-----------|
-| Frontend | React 19 + TypeScript + Tailwind CSS + Framer Motion |
-| Agent Brain | Gemini 3 Flash (streaming + structured state output) |
-| Image Gen | Gemini 2.5 Flash Image |
-| Video Gen | Veo 3.1 Fast (implemented with timeout + fallback) |
-| State Mgmt | React useState + LLM structured output via separator |
+| Frontend 前端 | React 19 + TypeScript + Tailwind CSS + Framer Motion |
+| Agent Brain Agent 大脑 | Gemini 3 Flash (streaming + structured state output) |
+| Image Gen 图片生成 | Gemini 2.5 Flash Image |
+| Video Gen 视频生成 | Veo 3.1 Fast (with timeout + fallback) |
+| State Mgmt 状态管理 | React useState + LLM structured output via separator |
 
-## Run Locally
+---
+
+## Run Locally｜本地运行
 
 ```bash
 # 1. Clone
@@ -118,50 +133,67 @@ npm run dev
 
 Open `http://localhost:3000`. Chat works with a free Gemini API key. Image/video generation requires a billing-enabled key.
 
-## Project Structure
+打开 `http://localhost:3000`。对话功能用免费 Gemini API Key 即可。图片/视频生成需要开通计费的 Key。
+
+---
+
+## Project Structure｜项目结构
 
 ```
 src/
-├── App.tsx                    # Main UI: chat + state panel
-├── types.ts                   # AgentState, Message, ExecuteType
+├── App.tsx                    # Main UI: chat + state panel｜主界面：对话 + 状态面板
+├── types.ts                   # AgentState, Message, ExecuteType｜类型定义
 ├── services/
-│   └── geminiService.ts       # LLM chat, image gen, video gen
+│   └── geminiService.ts       # LLM chat, image gen, video gen｜API 调用层
 ├── lib/
-│   └── utils.ts               # Tailwind utilities
-└── index.css                  # Global styles
+│   └── utils.ts               # Tailwind utilities｜工具函数
+└── index.css                  # Global styles｜全局样式
 ```
 
-## Framework Extension (documented, not yet implemented)
+---
+
+## Framework Extension｜框架拓展（已设计，待实现）
 
 Three expansion layers designed for future development:
 
-**Layer 1 — Cross-session Memory**: Persistent state (decision log, locked preferences, project archive) + new modes (RESUME, EVOLVE)
+三层拓展方向，已完成设计文档，待工程实现：
 
-**Layer 2 — Multi-Agent Collaboration**: Lead Agent (creative director) with sub-agents (visual, copy, strategy). Sub-agents don't communicate directly; the Lead Agent arbitrates conflicts.
+**Layer 1 — Cross-session Memory｜跨会话记忆**
 
-**Layer 3 — User Profile Evolution**: Per-dimension preference confidence scores. High confidence → Agent decides without asking. Low confidence → Agent confirms first.
+Persistent state (decision log, locked preferences, project archive) + new modes (RESUME, EVOLVE). The Agent remembers past collaborations and can revise earlier decisions when new information conflicts.
 
-See `framework-extension.docx` for full documentation with design rationale.
+持久化状态（决策日志、锁定偏好、项目档案）+ 新增 RESUME/EVOLVE 模式。Agent 记住历史协作，并在新信息与旧决策冲突时主动修正。
 
-## Design Philosophy
+**Layer 2 — Multi-Agent Collaboration｜多 Agent 协作**
 
-Every decision answers "why":
+Lead Agent (creative director) with sub-agents (visual, copy, strategy). Sub-agents don't communicate directly; the Lead Agent arbitrates conflicts in CRITIQUE mode.
 
-- Why a state machine? → Same input, different state, different behavior
-- Why does the Agent have a disagreement flag? → A partner without opinions is just a tool
-- Why no confirmation during EXECUTE? → Over-confirming breaks collaboration trust
-- Why self-critique before asking? → Gives the user a reference point instead of a blank "what do you think?"
-- 
+主 Agent（创意总监）+ 子 Agent（视觉、文案、策略）。子 Agent 之间不直接通信，由主 Agent 在 CRITIQUE 阶段仲裁冲突。
+
+**Layer 3 — User Profile Evolution｜用户画像演进**
+
+Per-dimension preference confidence scores derived from explicit statements, selection behavior, and revision feedback. High confidence → Agent decides without asking. Low confidence → Agent confirms first.
+
+按维度独立的偏好置信度，从用户明确表态、选择行为、修改反馈中学习。置信度高 → Agent 直接做决策；置信度低 → Agent 主动确认。
+
+See `framework-extension.docx` for full documentation.｜完整文档见 `framework-extension.docx`。
+
+---
+
+## Design Philosophy｜设计哲学
+
+Every decision answers "why".｜每个决策都能回答"为什么"。
 
 | 决策 Decision | 为什么 Why |
 |------|--------|
-| 状态机而非对话树 | 创作协作是非线性的，同一输入在不同状态下应触发不同行为 |
-| Agent有"异议标记" | 搭档和工具的本质区别——没有这个能力就退化成工具 |
-| 执行阶段不问用户 | 方向对齐后自主做micro-decisions，过度确认破坏协作信任 |
-| 内容生产类型由Agent决定 | 前端关键词匹配不可靠，Agent有上下文能做更好的判断 |
-| 视频失败自动回退图片 | 用户体验不应被API限制打断，降级产出比报错卡住好 |
+| 状态机而非对话树 State machine, not dialogue tree | 创作协作是非线性的，同一输入在不同状态下应触发不同行为 |
+| Agent 有"异议标记" Disagreement flag | 搭档和工具的本质区别——没有这个能力就退化成工具 |
+| 执行阶段不问用户 No confirmation during EXECUTE | 方向对齐后自主做 micro-decisions，过度确认破坏协作信任 |
+| 内容生产类型由 Agent 决定 Agent decides content type | 前端关键词匹配不可靠，Agent 有上下文能做更好的判断 |
+| 视频失败自动回退图片 Video fallback to image | 用户体验不应被 API 限制打断，降级产出比报错卡住好 |
 
 ---
 
 Built entirely with AI tools (Claude, Google AI Studio, Manus) as a portfolio piece exploring AI Agent product design.
-独立完成从第一性原理出发的需求分析、框架设计、交互Demo搭建、代码审查与优化、拓展文档撰写。重点不在"做了一个能跑的Demo"，而在于每一个产品决策都能回答"为什么这样设计"。
+
+全程使用 AI 工具（Claude、Google AI Studio、Manus）完成。独立完成从第一性原理出发的需求分析、框架设计、交互 Demo 搭建、代码审查与优化、拓展文档撰写。重点不在"做了一个能跑的 Demo"，而在于每一个产品决策都能回答"为什么这样设计"。
