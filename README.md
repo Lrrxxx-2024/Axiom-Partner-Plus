@@ -10,7 +10,8 @@ An interactive framework design and demo for a hyper-personified AI Agent. Explo
 
 ![React](https://img.shields.io/badge/React-19-blue) ![TypeScript](https://img.shields.io/badge/TypeScript-5.8-blue) ![Gemini](https://img.shields.io/badge/Gemini_API-3_Flash-orange)
 
-Web:https://axiom-partner-plus-1096758380260.us-west1.run.app
+GET INSPIRATIONS NOW :)
+https://axiom-partner-plus-1096758380260.us-west1.run.app
 
 ---
 
