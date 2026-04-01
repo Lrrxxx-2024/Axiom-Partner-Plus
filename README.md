@@ -192,6 +192,6 @@ Every decision answers "why".｜每个决策都能回答"为什么"。
 
 ---
 
-Built entirely with AI tools (Claude, Google AI Studio, Manus) as a portfolio piece exploring AI Agent product design.
+Built entirely with AI tools (Claude, Google AI Studio, Gemini) as a portfolio piece exploring AI Agent product design.
 
-全程使用 AI 工具（Claude、Google AI Studio、Manus）完成。独立完成从第一性原理出发的需求分析、框架设计、交互 Demo 搭建、代码审查与优化、拓展文档撰写。重点不在"做了一个能跑的 Demo"，而在于每一个产品决策都能回答"为什么这样设计"。
+全程使用 AI 工具（Claude、Google AI Studio、Gemini）完成。独立完成从第一性原理出发的需求分析、框架设计、交互 Demo 搭建、代码审查与优化、拓展文档撰写。重点不在"做了一个能跑的 Demo"，而在于每一个产品决策都能回答"为什么这样设计"。
