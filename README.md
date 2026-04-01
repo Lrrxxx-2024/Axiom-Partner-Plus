@@ -12,24 +12,6 @@ An interactive framework design and demo for a hyper-personified AI Agent. Explo
 
 ---
 
-
-## 🚀 Try It Live｜立即体验
-
-<h3 align="center">
-  <a href="https://ai.studio/apps/0fde65a6-1721-4dc2-8d40-3d7ff9445cb9?fullscreenApplet=true">
-    👉 GET INSPIRATIONS NOW 👈
-  </a>
-</h3>
-
-<p align="center">
-  <a href="https://ai.studio/apps/0fde65a6-1721-4dc2-8d40-3d7ff9445cb9?fullscreenApplet=true">
-    <img src="https://img.shields.io/badge/Live_Demo-Click_to_Launch-brightgreen?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Live Demo" />
-  </a>
-</p>
-
-
----
-
 ## Demo Videos｜演示视频
 
 > Pay attention to the right panel: the Agent doesn't just respond — it decides *how* to respond based on its internal state. Notice when it switches to DEBATE mode and pushes back.
